@@ -1,0 +1,28 @@
+if __name__ == '__main__':
+    N = int(input())
+    
+list1 = []
+for _ in range(N):
+    command = input().split()
+    match command[0]:
+        case "insert":
+            list1.insert(int(command[1]), int(command[2]))
+
+        case "print":
+            print(list1)
+
+        case "remove":
+            list1.remove(int(command[1]))
+
+        case "append":
+            list1.append(int(command[1]))
+
+        case "sort":
+            list1.sort()
+
+        case "pop":
+            list1.pop()
+
+        case "reverse":
+            list1.reverse()
+
